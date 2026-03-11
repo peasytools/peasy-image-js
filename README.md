@@ -10,6 +10,10 @@ All functions accept a `Buffer` and return a `Promise<ImageResult>` with the pro
 
 > **Try the interactive tools at [peasyimage.com](https://peasyimage.com)** -- [Image Resizer](https://peasyimage.com/tools/resize/), [Image Converter](https://peasyimage.com/tools/convert/), [Image Compressor](https://peasyimage.com/tools/compress/)
 
+<p align="center">
+  <img src="demo.gif" alt="peasy-image demo — image resize, crop, convert operations in terminal" width="800">
+</p>
+
 ## Table of Contents
 
 - [Install](#install)
