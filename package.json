@@ -1,0 +1,46 @@
+{
+  "name": "peasy-image",
+  "version": "0.1.0",
+  "description": "Image processing library for Node.js — resize, crop, convert, compress, filter. Powered by sharp.",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format esm --dts",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "image",
+    "resize",
+    "crop",
+    "convert",
+    "compress",
+    "sharp",
+    "peasy"
+  ],
+  "author": "Peasy Tools",
+  "license": "MIT",
+  "repository": {
+    "url": "https://github.com/peasytools/peasy-image-js.git"
+  },
+  "homepage": "https://peasyimage.com",
+  "dependencies": {
+    "sharp": "^0.33"
+  },
+  "devDependencies": {
+    "@types/node": "^25.4.0",
+    "tsup": "^8.0",
+    "typescript": "^5.7",
+    "vitest": "^3.0"
+  }
+}
