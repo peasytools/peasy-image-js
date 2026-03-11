@@ -8,7 +8,7 @@ Image processing library for Node.js powered by [sharp](https://sharp.pixelplumb
 
 All functions accept a `Buffer` and return a `Promise<ImageResult>` with the processed image data, dimensions, format, and byte size.
 
-> **Try the interactive tools at [peasyimage.com](https://peasyimage.com)** -- [Image Resizer](https://peasyimage.com/tools/resize/), [Image Converter](https://peasyimage.com/tools/convert/), [Image Compressor](https://peasyimage.com/tools/compress/)
+> **Try the interactive tools at [peasyimage.com](https://peasyimage.com)** -- image resizing, format conversion, compression, and more
 
 <p align="center">
   <img src="demo.gif" alt="peasy-image demo — image resize, crop, convert operations in terminal" width="800">
@@ -92,7 +92,7 @@ const wide = await resize(source, { width: 1200, fit: "contain" });
 const cropped = await crop(source, { left: 50, top: 100, width: 300, height: 300 });
 ```
 
-Learn more: [Image Resizer Tool](https://peasyimage.com/tools/resize/) -- [Image Cropper Tool](https://peasyimage.com/tools/crop/)
+Learn more: [PeasyImage](https://peasyimage.com) · [Glossary](https://peasyimage.com/glossary/)
 
 ### Format Conversion
 
@@ -117,7 +117,7 @@ const webp = await convert(source, "webp");
 const avif = await convert(source, "avif");
 ```
 
-Learn more: [Image Converter Tool](https://peasyimage.com/tools/convert/) -- [WebP vs AVIF Guide](https://peasyimage.com/blog/webp-vs-avif/)
+Learn more: [PeasyImage](https://peasyimage.com) · [Guides](https://peasyimage.com/guides/)
 
 ### Compression
 
@@ -133,7 +133,7 @@ const small = await compress(source);
 const webp = await compress(source, { quality: 80, format: "webp" });
 ```
 
-Learn more: [Image Compressor Tool](https://peasyimage.com/tools/compress/)
+Learn more: [PeasyImage](https://peasyimage.com)
 
 ### Rotation and Flipping
 
@@ -279,9 +279,7 @@ The Python version provides 20 operations powered by Pillow, including watermark
 | **peasy-image** | **[npm](https://www.npmjs.com/package/peasy-image)** | [PyPI](https://pypi.org/project/peasy-image/) | **Image processing — resize, crop, convert, compress** |
 | peasy-pdf | [npm](https://www.npmjs.com/package/peasy-pdf) | [PyPI](https://pypi.org/project/peasy-pdf/) | PDF manipulation -- merge, split, rotate, extract |
 | peasy-css | [npm](https://www.npmjs.com/package/peasy-css) | [PyPI](https://pypi.org/project/peasy-css/) | CSS processing -- minify, format, analyze |
-| peasy-compress | -- | [PyPI](https://pypi.org/project/peasy-compress/) | File compression -- gzip, brotli, zstd |
-| peasy-audio | -- | [PyPI](https://pypi.org/project/peasy-audio/) | Audio processing -- convert, trim, metadata |
-| peasy-video | -- | [PyPI](https://pypi.org/project/peasy-video/) | Video processing -- convert, trim, thumbnail |
+| peasy-compress | [npm](https://www.npmjs.com/package/peasy-compress) | [PyPI](https://pypi.org/project/peasy-compress/) | File compression -- gzip, brotli, zstd |
 | peasy-document | [npm](https://www.npmjs.com/package/peasy-document) | [PyPI](https://pypi.org/project/peasy-document/) | Document conversion -- DOCX, HTML, Markdown |
 
 Part of the [Peasy Tools](https://peasytools.com) developer tools ecosystem.
