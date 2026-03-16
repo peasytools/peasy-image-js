@@ -1,6 +1,6 @@
 # peasy-image
 
-[![npm](https://img.shields.io/npm/v/peasy-image)](https://www.npmjs.com/package/peasy-image)
+[![npm version](https://agentgif.com/badge/npm/peasy-image/version.svg)](https://www.npmjs.com/package/peasy-image)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.7-blue)](https://www.typescriptlang.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
