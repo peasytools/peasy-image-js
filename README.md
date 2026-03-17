@@ -94,7 +94,7 @@ const wide = await resize(source, { width: 1200, fit: "contain" });
 const cropped = await crop(source, { left: 50, top: 100, width: 300, height: 300 });
 ```
 
-Learn more: [PeasyImage](https://peasyimage.com) · [Glossary](https://peasyimage.com/glossary/)
+Learn more: [Resize Image Tool](https://peasyimage.com/image/resize-image/) · [Crop Image Tool](https://peasyimage.com/image/crop-image/) · [What is Aspect Ratio?](https://peasyimage.com/glossary/aspect-ratio/)
 
 ### Format Conversion
 
@@ -119,7 +119,7 @@ const webp = await convert(source, "webp");
 const avif = await convert(source, "avif");
 ```
 
-Learn more: [PeasyImage](https://peasyimage.com) · [Guides](https://peasyimage.com/guides/)
+Learn more: [Convert Image Tool](https://peasyimage.com/image/convert-image/) · [Image Format Comparison](https://peasyimage.com/guides/image-format-comparison/) · [What is AVIF?](https://peasyimage.com/glossary/avif/)
 
 ### Compression
 
@@ -135,7 +135,7 @@ const small = await compress(source);
 const webp = await compress(source, { quality: 80, format: "webp" });
 ```
 
-Learn more: [PeasyImage](https://peasyimage.com)
+Learn more: [Compress Image Tool](https://peasyimage.com/image/compress-image/) · [How to Compress Images for Web](https://peasyimage.com/guides/how-to-compress-images-for-web/) · [What is Lossy Compression?](https://peasyimage.com/glossary/lossy-compression/)
 
 ### Rotation and Flipping
 
@@ -300,10 +300,10 @@ Full API documentation at [peasyimage.com/developers/](https://peasyimage.com/de
 
 ## Learn More
 
-- **Tools**: [Image Compress](https://peasyimage.com/image/compress-image/) · [Image Resize](https://peasyimage.com/image/resize-image/) · [Image Convert](https://peasyimage.com/image/convert-image/) · [All Tools](https://peasyimage.com/)
-- **Guides**: [Image Format Comparison](https://peasyimage.com/guides/image-format-comparison/) · [How to Compress Images for Web](https://peasyimage.com/guides/how-to-compress-images-for-web/) · [All Guides](https://peasyimage.com/guides/)
-- **Glossary**: [AVIF](https://peasyimage.com/glossary/avif/) · [Color Grading](https://peasyimage.com/glossary/color-grading-image/) · [Alpha Channel](https://peasyimage.com/glossary/alpha-channel/) · [All Terms](https://peasyimage.com/glossary/)
-- **Formats**: [PNG](https://peasyimage.com/formats/png/) · [WebP](https://peasyimage.com/formats/webp/) · [All Formats](https://peasyimage.com/formats/)
+- **Tools**: [Resize Image](https://peasyimage.com/image/resize-image/) · [Compress Image](https://peasyimage.com/image/compress-image/) · [Convert Image](https://peasyimage.com/image/convert-image/) · [Crop Image](https://peasyimage.com/image/crop-image/) · [Rotate Image](https://peasyimage.com/image/rotate-image/) · [Watermark Image](https://peasyimage.com/image/watermark-image/) · [All Image Tools](https://peasyimage.com/)
+- **Guides**: [Image Format Comparison](https://peasyimage.com/guides/image-format-comparison/) · [How to Compress Images for Web](https://peasyimage.com/guides/how-to-compress-images-for-web/) · [JPG vs PNG](https://peasyimage.com/guides/jpg-vs-png-which-format-to-use/) · [WebP vs JPG](https://peasyimage.com/guides/webp-vs-jpg-modern-image-formats/) · [How to Optimize Images for SEO](https://peasyimage.com/guides/how-to-optimize-images-for-seo/) · [All Guides](https://peasyimage.com/guides/)
+- **Glossary**: [AVIF](https://peasyimage.com/glossary/avif/) · [WebP](https://peasyimage.com/glossary/webp/) · [Alpha Channel](https://peasyimage.com/glossary/alpha-channel/) · [EXIF](https://peasyimage.com/glossary/exif/) · [Color Grading](https://peasyimage.com/glossary/color-grading-image/) · [Chroma Subsampling](https://peasyimage.com/glossary/chroma-subsampling/) · [All Terms](https://peasyimage.com/glossary/)
+- **Formats**: [PNG](https://peasyimage.com/formats/png/) · [JPEG](https://peasyimage.com/formats/jpeg/) · [WebP](https://peasyimage.com/formats/webp/) · [AVIF](https://peasyimage.com/formats/avif/) · [All Formats](https://peasyimage.com/formats/)
 - **API**: [REST API Docs](https://peasyimage.com/developers/) · [OpenAPI Spec](https://peasyimage.com/api/openapi.json)
 
 ## Also Available
