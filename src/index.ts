@@ -35,3 +35,21 @@ export {
   thumbnail,
   tint,
 } from "./engine.js";
+
+// API Client
+export { PeasyImage } from "./client.js";
+export type {
+  ListOptions,
+  ListGuidesOptions,
+  ListConversionsOptions,
+  PaginatedResponse,
+  Tool,
+  Category,
+  Format,
+  Conversion,
+  GlossaryTerm,
+  Guide,
+  UseCase,
+  Site,
+  SearchResult,
+} from "./api-types.js";
