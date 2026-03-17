@@ -3,6 +3,7 @@
 [![npm version](https://agentgif.com/badge/npm/peasy-image/version.svg)](https://www.npmjs.com/package/peasy-image)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.7-blue)](https://www.typescriptlang.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![GitHub stars](https://agentgif.com/badge/github/peasytools/peasy-image-js/stars.svg)](https://github.com/peasytools/peasy-image-js)
 
 Image processing library for Node.js powered by [sharp](https://sharp.pixelplumbing.com/) -- resize, crop, convert, compress, rotate, blur, sharpen, and 8 more operations. TypeScript-first with full type definitions.
 
