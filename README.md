@@ -28,7 +28,9 @@ All functions accept a `Buffer` and return a `Promise<ImageResult>` with the pro
   - [Thumbnails](#thumbnails)
 - [API Reference](#api-reference)
 - [TypeScript Types](#typescript-types)
-- [Also Available for Python](#also-available-for-python)
+- [REST API Client](#rest-api-client)
+- [Learn More](#learn-more)
+- [Also Available](#also-available)
 - [Peasy Developer Tools](#peasy-developer-tools)
 - [License](#license)
 
@@ -264,25 +266,69 @@ interface CropOptions { left: number; top: number; width: number; height: number
 interface CompressOptions { quality?: number; format?: ImageFormat; }
 ```
 
-## Also Available for Python
+## REST API Client
 
-| Platform | Package | Install |
+The API client connects to the [PeasyImage developer API](https://peasyimage.com/developers/) for tool discovery and content.
+
+```typescript
+import { PeasyImageClient } from "peasy-image";
+
+const client = new PeasyImageClient();
+
+// List available tools
+const tools = await client.listTools();
+console.log(tools.results);
+
+// Search across all content
+const results = await client.search("resize");
+console.log(results);
+
+// Browse the glossary
+const glossary = await client.listGlossary({ search: "format" });
+for (const term of glossary.results) {
+  console.log(`${term.term}: ${term.definition}`);
+}
+
+// Discover guides
+const guides = await client.listGuides({ category: "image" });
+for (const guide of guides.results) {
+  console.log(`${guide.title} (${guide.audience_level})`);
+}
+```
+
+Full API documentation at [peasyimage.com/developers/](https://peasyimage.com/developers/).
+
+## Learn More
+
+- **Tools**: [Image Resize](https://peasyimage.com/tools/image-resize/) · [Image Crop](https://peasyimage.com/tools/image-crop/) · [Image Convert](https://peasyimage.com/tools/image-convert/) · [All Tools](https://peasyimage.com/)
+- **Guides**: [WebP Guide](https://peasyimage.com/guides/resize/) · [All Guides](https://peasyimage.com/guides/)
+- **Glossary**: [JPEG](https://peasyimage.com/glossary/jpeg/) · [PNG](https://peasyimage.com/glossary/png/) · [WebP](https://peasyimage.com/glossary/webp/) · [All Terms](https://peasyimage.com/glossary/)
+- **Formats**: [JPEG](https://peasyimage.com/formats/jpeg/) · [PNG](https://peasyimage.com/formats/png/) · [All Formats](https://peasyimage.com/formats/)
+- **API**: [REST API Docs](https://peasyimage.com/developers/) · [OpenAPI Spec](https://peasyimage.com/api/openapi.json)
+
+## Also Available
+
+| Language | Package | Install |
 |----------|---------|---------|
-| **PyPI** | [peasy-image](https://pypi.org/project/peasy-image/) | `pip install peasy-image` |
-
-The Python version provides 20 operations powered by Pillow, including watermark, border, round corners, pad, and EXIF extraction.
+| **Python** | [peasy-image](https://pypi.org/project/peasy-image/) | `pip install "peasy-image[all]"` |
+| **Go** | [peasy-image-go](https://pkg.go.dev/github.com/peasytools/peasy-image-go) | `go get github.com/peasytools/peasy-image-go` |
+| **Rust** | [peasy-image](https://crates.io/crates/peasy-image) | `cargo add peasy-image` |
+| **Ruby** | [peasy-image](https://rubygems.org/gems/peasy-image) | `gem install peasy-image` |
 
 ## Peasy Developer Tools
 
-| Package | npm | PyPI | Description |
-|---------|-----|------|-------------|
-| **peasy-image** | **[npm](https://www.npmjs.com/package/peasy-image)** | [PyPI](https://pypi.org/project/peasy-image/) | **Image processing — resize, crop, convert, compress** |
-| peasy-pdf | [npm](https://www.npmjs.com/package/peasy-pdf) | [PyPI](https://pypi.org/project/peasy-pdf/) | PDF manipulation -- merge, split, rotate, extract |
-| peasy-css | [npm](https://www.npmjs.com/package/peasy-css) | [PyPI](https://pypi.org/project/peasy-css/) | CSS processing -- minify, format, analyze |
-| peasy-compress | [npm](https://www.npmjs.com/package/peasy-compress) | [PyPI](https://pypi.org/project/peasy-compress/) | File compression -- gzip, brotli, zstd |
-| peasy-document | [npm](https://www.npmjs.com/package/peasy-document) | [PyPI](https://pypi.org/project/peasy-document/) | Document conversion -- DOCX, HTML, Markdown |
+Part of the [Peasy Tools](https://peasytools.com) open-source developer ecosystem.
 
-Part of the [Peasy Tools](https://peasytools.com) developer tools ecosystem.
+| Package | PyPI | npm | Description |
+|---------|------|-----|-------------|
+| peasy-pdf | [PyPI](https://pypi.org/project/peasy-pdf/) | [npm](https://www.npmjs.com/package/peasy-pdf) | PDF merge, split, rotate, compress, 21 operations — [peasypdf.com](https://peasypdf.com) |
+| **peasy-image** | **[PyPI](https://pypi.org/project/peasy-image/)** | **[npm](https://www.npmjs.com/package/peasy-image)** | **Image resize, crop, convert, compress — [peasyimage.com](https://peasyimage.com)** |
+| peasy-audio | [PyPI](https://pypi.org/project/peasy-audio/) | [npm](https://www.npmjs.com/package/peasy-audio) | Audio trim, merge, convert, normalize — [peasyaudio.com](https://peasyaudio.com) |
+| peasy-video | [PyPI](https://pypi.org/project/peasy-video/) | [npm](https://www.npmjs.com/package/peasy-video) | Video trim, resize, thumbnails, GIF — [peasyvideo.com](https://peasyvideo.com) |
+| peasy-css | [PyPI](https://pypi.org/project/peasy-css/) | [npm](https://www.npmjs.com/package/peasy-css) | CSS minify, format, analyze — [peasycss.com](https://peasycss.com) |
+| peasy-compress | [PyPI](https://pypi.org/project/peasy-compress/) | [npm](https://www.npmjs.com/package/peasy-compress) | ZIP, TAR, gzip compression — [peasytools.com](https://peasytools.com) |
+| peasy-document | [PyPI](https://pypi.org/project/peasy-document/) | [npm](https://www.npmjs.com/package/peasy-document) | Markdown, HTML, CSV, JSON conversion — [peasyformats.com](https://peasyformats.com) |
+| peasytext | [PyPI](https://pypi.org/project/peasytext/) | [npm](https://www.npmjs.com/package/peasytext) | Text case conversion, slugify, word count — [peasytext.com](https://peasytext.com) |
 
 ## License
 
