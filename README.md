@@ -300,10 +300,10 @@ Full API documentation at [peasyimage.com/developers/](https://peasyimage.com/de
 
 ## Learn More
 
-- **Tools**: [Image Resize](https://peasyimage.com/tools/image-resize/) · [Image Crop](https://peasyimage.com/tools/image-crop/) · [Image Convert](https://peasyimage.com/tools/image-convert/) · [All Tools](https://peasyimage.com/)
-- **Guides**: [WebP Guide](https://peasyimage.com/guides/resize/) · [All Guides](https://peasyimage.com/guides/)
-- **Glossary**: [JPEG](https://peasyimage.com/glossary/jpeg/) · [PNG](https://peasyimage.com/glossary/png/) · [WebP](https://peasyimage.com/glossary/webp/) · [All Terms](https://peasyimage.com/glossary/)
-- **Formats**: [JPEG](https://peasyimage.com/formats/jpeg/) · [PNG](https://peasyimage.com/formats/png/) · [All Formats](https://peasyimage.com/formats/)
+- **Tools**: [Image Compress](https://peasyimage.com/image/compress-image/) · [Image Resize](https://peasyimage.com/image/resize-image/) · [Image Convert](https://peasyimage.com/image/convert-image/) · [All Tools](https://peasyimage.com/)
+- **Guides**: [Image Format Comparison](https://peasyimage.com/guides/image-format-comparison/) · [How to Compress Images for Web](https://peasyimage.com/guides/how-to-compress-images-for-web/) · [All Guides](https://peasyimage.com/guides/)
+- **Glossary**: [AVIF](https://peasyimage.com/glossary/avif/) · [Color Grading](https://peasyimage.com/glossary/color-grading-image/) · [Alpha Channel](https://peasyimage.com/glossary/alpha-channel/) · [All Terms](https://peasyimage.com/glossary/)
+- **Formats**: [PNG](https://peasyimage.com/formats/png/) · [WebP](https://peasyimage.com/formats/webp/) · [All Formats](https://peasyimage.com/formats/)
 - **API**: [REST API Docs](https://peasyimage.com/developers/) · [OpenAPI Spec](https://peasyimage.com/api/openapi.json)
 
 ## Also Available
