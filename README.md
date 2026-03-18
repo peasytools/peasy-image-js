@@ -12,7 +12,7 @@ All functions accept a `Buffer` and return a `Promise<ImageResult>` with the pro
 > **Try the interactive tools at [peasyimage.com](https://peasyimage.com)** -- image resizing, format conversion, compression, and more
 
 <p align="center">
-  <img src="demo.gif" alt="peasy-image demo — image resize, crop, convert operations in terminal" width="800">
+  <a href="https://agentgif.com/4wmbsDgf"><img src="https://media.agentgif.com/4wmbsDgf.gif" alt="peasy-image demo — image resize, crop, convert operations in terminal" width="800"></a>
 </p>
 
 ## Table of Contents
