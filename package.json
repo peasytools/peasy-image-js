@@ -1,6 +1,6 @@
 {
   "name": "peasy-image",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Image processing library for Node.js — resize, crop, convert, compress, filter. Powered by sharp.",
   "type": "module",
   "main": "dist/index.js",
